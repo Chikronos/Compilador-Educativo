@@ -3,8 +3,13 @@ lexer grammar AlgoritmosLexer;
 LEER: 'leer' ;
 IMPRIMIR: 'imprimir' ;
 ALGORITMO: 'algoritmo' ;
-LBRACE: '{' ;
-RBRACE: '}' ;
+SI: 'si' ;
+SINO: 'sino' ;
+MIENTRAS: 'mientras' ;
+HACER: 'hacer' ;
+
+LLAVES_ABRE: '{' ;
+LLAVES_CIERRA: '}' ;
 LPAREN: '(' ;
 RPAREN: ')' ;
 SEMI: ';' ;
@@ -15,7 +20,8 @@ SUB: '-' ;
 MUL: '*' ;
 DIV: '/' ;
 
-ID: [a-zA-Z_][a-zA-Z0-9_]* ;
 NUMERO: [0-9]+ ;
+
+ID: [a-zA-Z_][a-zA-Z0-9_]* ;
 
 WS: [ \t\r\n]+ -> skip ;
