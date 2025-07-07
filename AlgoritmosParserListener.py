@@ -8,12 +8,12 @@ else:
 # This class defines a complete listener for a parse tree produced by AlgoritmosParser.
 class AlgoritmosParserListener(ParseTreeListener):
 
-    # Enter a parse tree produced by AlgoritmosParser#programa.
-    def enterPrograma(self, ctx:AlgoritmosParser.ProgramaContext):
+    # Enter a parse tree produced by AlgoritmosParser#program.
+    def enterProgram(self, ctx:AlgoritmosParser.ProgramContext):
         pass
 
-    # Exit a parse tree produced by AlgoritmosParser#programa.
-    def exitPrograma(self, ctx:AlgoritmosParser.ProgramaContext):
+    # Exit a parse tree produced by AlgoritmosParser#program.
+    def exitProgram(self, ctx:AlgoritmosParser.ProgramContext):
         pass
 
 
@@ -50,6 +50,33 @@ class AlgoritmosParserListener(ParseTreeListener):
 
     # Exit a parse tree produced by AlgoritmosParser#asignacion.
     def exitAsignacion(self, ctx:AlgoritmosParser.AsignacionContext):
+        pass
+
+
+    # Enter a parse tree produced by AlgoritmosParser#bloque.
+    def enterBloque(self, ctx:AlgoritmosParser.BloqueContext):
+        pass
+
+    # Exit a parse tree produced by AlgoritmosParser#bloque.
+    def exitBloque(self, ctx:AlgoritmosParser.BloqueContext):
+        pass
+
+
+    # Enter a parse tree produced by AlgoritmosParser#condicion.
+    def enterCondicion(self, ctx:AlgoritmosParser.CondicionContext):
+        pass
+
+    # Exit a parse tree produced by AlgoritmosParser#condicion.
+    def exitCondicion(self, ctx:AlgoritmosParser.CondicionContext):
+        pass
+
+
+    # Enter a parse tree produced by AlgoritmosParser#mientras.
+    def enterMientras(self, ctx:AlgoritmosParser.MientrasContext):
+        pass
+
+    # Exit a parse tree produced by AlgoritmosParser#mientras.
+    def exitMientras(self, ctx:AlgoritmosParser.MientrasContext):
         pass
 
 
